@@ -1,4 +1,5 @@
 node {
+    checkout scm
     withEnv(["PATH=/opt/homebrew/Caskroom/miniforge/base/bin:/usr/local/bin:/usr/bin:/bin:${env.PATH}"]) {
         try {
             stage('Build') {
